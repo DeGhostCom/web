@@ -311,6 +311,19 @@ div#loading img {
     }
 }
 
+
+.fe-margine  {
+    padding: 14px;
+}
+
+ .app-badges a{
+
+    margin: 13px;
+
+ }
+
+
+
 .site-header--absolute {
     position: absolute;
     top: 0;
@@ -1640,7 +1653,7 @@ li.sub-menu--item.nav-item-has-children i {
 
 /*Section heading style-4*/
 .section-heading-4 h2 {
-    font-family: Karla;
+    font-family: sans-serif;
     color: #1F1F1F;
     font-size: 34px;
     font-weight: 700;
@@ -1665,7 +1678,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .section-heading-4 p {
-    font-family: Karla;
+    font-family: sans-serif;
     color: #333333;
     font-size: 21px;
     font-weight: 400;
@@ -1702,7 +1715,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .section-heading-5 p {
-    font-family: Karla;
+    font-family: sans-serif;
     color: #333333;
     font-size: 21px;
     font-weight: 400;
@@ -1739,7 +1752,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .section-heading-6 p {
-    font-family: Karla;
+    font-family: sans-serif;
     color: #333333;
     font-size: 21px;
     font-weight: 400;
@@ -1751,7 +1764,7 @@ li.sub-menu--item.nav-item-has-children i {
 
 /*Section heading style-7*/
 .section-heading-7 h2 {
-    font-family: Karla;
+    font-family: sans-serif;
     color: #1F1F1F;
     font-size: 34px;
     font-weight: 700;
@@ -1829,7 +1842,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .section-heading-8 p {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -1841,7 +1854,7 @@ li.sub-menu--item.nav-item-has-children i {
 
 /*Section heading style-9*/
 .section-heading-9 h2 {
-    font-family: Karla;
+    font-family: sans-serif;
     color: #1F1F1F;
     font-size: 34px;
     font-weight: 700;
@@ -1866,7 +1879,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .section-heading-9 p {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2049,7 +2062,7 @@ li.sub-menu--item.nav-item-has-children i {
    Hero Area-L-11
         <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .landing-11-menu .site-menu-main .nav-link-item {
-    font-family: Karla;
+    font-family: sans-serif;
     color: #1f1f1f;
     font-size: 16px;
     font-weight: 400;
@@ -2062,7 +2075,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .landing-11-menu .site-menu-main .sub-menu--item {
-    font-family: Karla;
+    font-family: sans-serif;
     color: #1f1f1f;
     font-size: 16px;
     font-weight: 400;
@@ -2144,7 +2157,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .hero-area-l11 .content p {
-    font-family: Karla;
+    font-family: sans-serif;
     color: #222F3F;
     font-size: 21px;
     font-weight: 400;
@@ -2166,7 +2179,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .hero-area-l11 .banner-sign-text {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -2203,7 +2216,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .header-btn-l11 .log-in-btn {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -2219,7 +2232,7 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .header-btn-l11 .download-trail-btn {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -2237,7 +2250,7 @@ li.sub-menu--item.nav-item-has-children i {
     height: 60px;
     background: #258AFF;
     border-radius: 3px;
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -2399,7 +2412,7 @@ Content Area-1 L-11-2
 }
 
 .content-area-l-11-2 .content p {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -2459,7 +2472,7 @@ Content Area-1 L-11-2
 }
 
 .content-area-l-11-3 ul li {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2562,7 +2575,7 @@ Content Area-1 L-11-2
 }
 
 .feature-l-11-items .content-body p {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -2636,7 +2649,7 @@ Content Area-1 L-11-2
 }
 
 .testimonial-slider-l-11 .testimonial-card p {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -2670,7 +2683,7 @@ Content Area-1 L-11-2
 }
 
 .testimonial-slider-l-11 .testimonial-card .user-details span {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -2712,7 +2725,7 @@ Content Area-1 L-11-2
 }
 
 .newsletter-l-11 .content h5 {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -2745,7 +2758,7 @@ Content Area-1 L-11-2
 }
 
 .newsletter-l-11 .content p {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2756,7 +2769,7 @@ Content Area-1 L-11-2
 }
 
 .newsletter-l-11 .content span {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2770,7 +2783,7 @@ Content Area-1 L-11-2
 .newsletter-l-11 .content .btn {
     min-width: 226px;
     height: 60px;
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -2826,7 +2839,7 @@ Content Area-1 L-11-2
 }
 
 .footer-widget-l-11 ul li a {
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
@@ -2856,7 +2869,7 @@ Content Area-1 L-11-2
 
 .copyright-area-l-11 p {
     margin-bottom: 0;
-    font-family: Karla;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
