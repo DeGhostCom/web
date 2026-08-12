@@ -280,11 +280,26 @@
         .hero p.lead { font-size: 1.18rem; color: var(--muted); max-width: 540px; margin-bottom: 36px; }
         .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 40px; }
 
-        .app-badges { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-        .app-badges a { transition: transform .3s var(--ease); line-height: 0; }
-        .app-badges a:hover { transform: translateY(-4px); }
-        .app-badges img.play { height: 56px; }
-        .app-badges img.apple { height: 40px; }
+        .app-badges {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .app-badges a {
+            display: block;
+            width: 166px;
+            line-height: 0;
+            transition: transform .3s var(--ease);
+        }
+        .app-badges a:hover { transform: translateY(-3px); }
+        .app-badges img {
+            width: 166px;
+            height: 50px;
+            object-fit: contain;
+            object-position: left center;
+            display: block;
+        }
 
         .hero-visual { position: relative; }
         .hero-visual::before {
@@ -787,12 +802,15 @@
                             <img src="image/qr-deghost-m.png" alt="QR code for https://deghost.com/m">
                             <span>Scan to download<br>deghost.com/m</span>
                         </div>
-                        <div class="app-badges" style="flex-direction: column; align-items: flex-start; gap: 10px;">
+                        <div class="app-badges">
                             <a href="https://play.google.com/store/apps/details?id=com.deghost.degedu&hl=en" target="_blank" rel="noopener">
-                                <img class="play" alt="Get it on Google Play" src="image/google-play-badge.png" style="height: 54px;">
+                                <img alt="Get it on Google Play" src="image/google-play-badge.png">
                             </a>
                             <a href="https://apps.apple.com/us/app/deghost-edu/id6783858855" target="_blank" rel="noopener">
-                                <img class="apple" alt="Download on the App Store" src="image/app-store-badge.svg" style="height: 40px;">
+                                <img alt="Download on the App Store" src="image/app-store-badge.svg">
+                            </a>
+                            <a href="https://www.amazon.com/gp/product/B0DBH911KB" target="_blank" rel="noopener">
+                                <img alt="Amazon Appstore" src="image/amazon.png">
                             </a>
                         </div>
                     </div>
@@ -916,6 +934,7 @@
                     <ul>
                         <li><a href="https://play.google.com/store/apps/details?id=com.deghost.degedu&hl=en" target="_blank" rel="noopener"><i class="fab fa-google-play"></i>&nbsp; Google Play</a></li>
                         <li><a href="https://apps.apple.com/us/app/deghost-edu/id6783858855" target="_blank" rel="noopener"><i class="fab fa-apple"></i>&nbsp; App Store</a></li>
+                        <li><a href="https://www.amazon.com/gp/product/B0DBH911KB" target="_blank" rel="noopener"><i class="fab fa-amazon"></i>&nbsp; Amazon Appstore</a></li>
                         <li><a href="https://deghost.com/m"><i class="fas fa-qrcode"></i>&nbsp; deghost.com/m</a></li>
                     </ul>
                 </div>
