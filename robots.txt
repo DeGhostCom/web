@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /m/
+Disallow: /index.v1.backup.html
+Disallow: /index2.html
+Disallow: /deghosterp-app.html
+
+Sitemap: https://deghost.com/sitemap.xml

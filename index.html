@@ -5,13 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="DeGhost School ERP — one platform to run your entire school: finance, purchasing, student fees, academics, assessments, attendance, library, HR, and the DeGhost Edu parent app.">
-    <title>DeGhost — School ERP for Modern Education</title>
+
+    <!-- Primary SEO — brand keyword: DeGhost -->
+    <title>DeGhost | School ERP Software &amp; DeGhost Edu Parent App</title>
+    <meta name="description" content="DeGhost is a complete School ERP for finance, purchasing, student fees, academics, assessments, attendance, and HR — with the DeGhost Edu mobile app for parents. Official site of DeGhost Education.">
+    <meta name="keywords" content="DeGhost, DeGhost ERP, DeGhost Edu, DeGhost Education, school ERP, school management system, student fees, parent app">
+    <meta name="author" content="DeGhost Education">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://deghost.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DeGhost">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://deghost.com/">
+    <meta property="og:title" content="DeGhost | School ERP Software &amp; DeGhost Edu Parent App">
+    <meta property="og:description" content="DeGhost School ERP unifies finance, fees, academics, and operations. Parents stay informed with the DeGhost Edu app on Android and iOS.">
+    <meta property="og:image" content="https://deghost.com/image/og-deghost.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="DeGhost School ERP and DeGhost Edu">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DeGhost | School ERP &amp; DeGhost Edu">
+    <meta name="twitter:description" content="DeGhost School ERP for finance, fees, academics, and parent communication. Download DeGhost Edu on Google Play and the App Store.">
+    <meta name="twitter:image" content="https://deghost.com/image/og-deghost.png">
+
+    <meta name="theme-color" content="#1787FC">
     <link rel="shortcut icon" href="image/degost-fav.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="image/deghost-sm.png">
+
     <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://deghost.com/#organization",
+          "name": "DeGhost",
+          "legalName": "DeGhost Education",
+          "url": "https://deghost.com/",
+          "logo": "https://deghost.com/image/deghost-logo-full.svg",
+          "email": "info@deghost.com",
+          "sameAs": [
+            "https://play.google.com/store/apps/details?id=com.deghost.degedu&hl=en",
+            "https://apps.apple.com/us/app/deghost-edu/id6783858855"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@deghost.com",
+            "contactType": "sales",
+            "availableLanguage": ["English", "Arabic"]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://deghost.com/#website",
+          "url": "https://deghost.com/",
+          "name": "DeGhost",
+          "description": "Official DeGhost website — School ERP and DeGhost Edu parent app.",
+          "publisher": { "@id": "https://deghost.com/#organization" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://deghost.com/#school-erp",
+          "name": "DeGhost School ERP",
+          "alternateName": ["DeGhost", "DeGhost ERP"],
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://deghost.com/",
+          "description": "DeGhost School ERP manages school finance, purchasing, student fees, academics, assessments, attendance, library, HR, and payroll.",
+          "publisher": { "@id": "https://deghost.com/#organization" },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Contact DeGhost for a school demo and pricing"
+          }
+        },
+        {
+          "@type": "MobileApplication",
+          "@id": "https://deghost.com/#deghost-edu",
+          "name": "DeGhost Edu",
+          "alternateName": "DeGhost Education App",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Android, iOS",
+          "url": "https://deghost.com/m/",
+          "description": "DeGhost Edu is the parent companion app for DeGhost School ERP — fees, attendance, library, messages, and reports.",
+          "publisher": { "@id": "https://deghost.com/#organization" },
+          "installUrl": [
+            "https://play.google.com/store/apps/details?id=com.deghost.degedu&hl=en",
+            "https://apps.apple.com/us/app/deghost-edu/id6783858855"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
+      ]
+    }
+    </script>
     <style>
         :root {
             --primary: #1787FC;
@@ -362,7 +464,7 @@
         .why-card p { color: #9db0c7; font-size: .95rem; }
 
         /* ---------- Mobile app ---------- */
-        .mobile-app { background: var(--bg-soft); padding-top: 90px; }
+        .mobile-app { background: var(--bg-soft); }
         .mobile-panel {
             display: grid;
             grid-template-columns: 1fr 1.15fr;
@@ -580,77 +682,108 @@
     <!-- Header -->
     <header class="site-header" id="siteHeader">
         <div class="container nav-wrap">
-            <a href="#" class="brand-logo">
-                <img src="image/deghost-logo-full.svg" alt="DeGhost logo">
+            <a href="https://deghost.com/" class="brand-logo" title="DeGhost — School ERP">
+                <img src="image/deghost-logo-full.svg" alt="DeGhost — School ERP logo" width="200" height="121">
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#mobile">Parent App</a></li>
                 <li><a href="#features">Modules</a></li>
-                <li><a href="#product">How it works</a></li>
+                <li><a href="#mobile">Parent App</a></li>
                 <li><a href="#why">Why DeGhost</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#contact" class="btn btn-primary nav-cta">Book a School Demo</a>
+            <a href="#contact" class="btn btn-primary nav-cta">Book a Demo</a>
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
 
+    <main id="main">
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero" aria-label="DeGhost School ERP introduction">
         <div class="container hero-grid">
             <div class="reveal visible">
-                <span class="eyebrow"><i class="fas fa-circle"></i> Complete School ERP</span>
-                <h1>One system to run your <span>entire school</span></h1>
-                <p class="lead">From finance and purchasing to student fees, academics, assessments, attendance, and parent communication — DeGhost connects every department so nothing falls through the cracks.</p>
+                <span class="eyebrow"><i class="fas fa-circle"></i> DeGhost School ERP</span>
+                <h1>DeGhost — run your school on <span>one platform</span></h1>
+                <p class="lead">DeGhost connects finance, purchasing, student fees, academics, and daily operations — then puts the same live information in parents’ hands through DeGhost Edu.</p>
                 <div class="hero-actions">
-                    <a href="#features" class="btn btn-primary">Explore School Modules <i class="fas fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-ghost">Talk to an Expert</a>
+                    <a href="#features" class="btn btn-primary">See what’s included <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-ghost">Book a demo</a>
                 </div>
             </div>
             <div class="hero-visual reveal visible" data-delay="1">
-                <img src="image/l2/laptop-screen.png" alt="DeGhost School ERP dashboard">
+                <img src="image/l2/laptop-screen.png" alt="DeGhost School ERP software dashboard" width="800" height="560">
                 <div class="float-card one">
                     <div class="ic" style="background: #22c55e;"><i class="fas fa-hand-holding-usd"></i></div>
-                    <div>Fees collected<small>contracts &amp; installments</small></div>
+                    <div>Fees &amp; contracts<small>tracked end to end</small></div>
                 </div>
                 <div class="float-card two">
-                    <div class="ic" style="background: var(--primary);"><i class="fas fa-user-graduate"></i></div>
-                    <div>Parents notified<small>live on DeGhost Edu</small></div>
+                    <div class="ic" style="background: var(--primary);"><i class="fas fa-mobile-alt"></i></div>
+                    <div>Parents updated<small>on DeGhost Edu</small></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats -->
-    <section class="stats">
+    <!-- Modules -->
+    <section id="features" class="features">
         <div class="container">
-            <div class="stats-inner reveal">
-                <div class="stat"><b>1</b><span>Platform for the whole school</span></div>
-                <div class="stat"><b>15+</b><span>Education &amp; ops modules</span></div>
-                <div class="stat"><b>100%</b><span>Fee &amp; academic visibility</span></div>
-                <div class="stat"><b>24/7</b><span>Parent app access</span></div>
+            <div class="section-head reveal">
+                <span class="section-tag">DeGhost modules</span>
+                <h2>What DeGhost includes for your school</h2>
+                <p>Replace scattered tools with DeGhost School ERP — from the finance office to the classroom.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-coins"></i></div>
+                    <h3>Finance &amp; Accounting</h3>
+                    <p>Budgets, ledgers, and school financial reports in one place for clear leadership decisions.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="1">
+                    <div class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Student Fees</h3>
+                    <p>Contracts, discounts, installments, and collection status — visible to the office and to parents.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="2">
+                    <div class="feature-icon"><i class="fas fa-shopping-basket"></i></div>
+                    <h3>Purchasing</h3>
+                    <p>Requests, approvals, and inventory for books, supplies, and campus assets.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Academics &amp; Assessments</h3>
+                    <p>Courses, evaluations, and report cards published once — then available on the parent app.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="1">
+                    <div class="feature-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Attendance &amp; Ops</h3>
+                    <p>Attendance, library, clinic, timetable, and school messages tied to each student record.</p>
+                </div>
+                <div class="feature-card reveal" data-delay="2">
+                    <div class="feature-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3>HR &amp; Payroll</h3>
+                    <p>Staff records and payroll on the same platform that runs your academic year.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Mobile app -->
+    <!-- Parent app -->
     <section id="mobile" class="mobile-app">
         <div class="container">
             <div class="mobile-panel reveal">
                 <div class="mobile-copy">
-                    <span class="section-tag">Parent App</span>
-                    <h2>Bring the school to every parent's pocket</h2>
-                    <p>DeGhost Edu is the companion app for your School ERP. Parents see the same live data your office runs — fees and contracts, attendance, library, messages, and report cards — without calling the front desk.</p>
+                    <span class="section-tag">DeGhost Edu</span>
+                    <h2>DeGhost Edu — what the office publishes, parents see</h2>
+                    <p>DeGhost Edu is the parent window into DeGhost School ERP. Fewer front-desk calls. More trust.</p>
                     <ul class="check-list">
-                        <li><i class="fas fa-check"></i> Fee contracts, discounts &amp; installment status</li>
-                        <li><i class="fas fa-check"></i> Attendance, library, clinic &amp; school messages</li>
-                        <li><i class="fas fa-check"></i> Download via <a href="https://deghost.com/m" style="color: var(--primary); font-weight: 600;">deghost.com/m</a></li>
+                        <li><i class="fas fa-check"></i> Fee balances, installments &amp; payment status</li>
+                        <li><i class="fas fa-check"></i> Attendance, reports, library &amp; messages</li>
+                        <li><i class="fas fa-check"></i> Android &amp; iOS · <a href="https://deghost.com/m" style="color: var(--primary); font-weight: 600;">deghost.com/m</a></li>
                     </ul>
                     <div class="mobile-actions">
                         <div class="qr-box">
-                            <img src="image/qr-deghost-m.png" alt="QR code linking to https://deghost.com/m">
+                            <img src="image/qr-deghost-m.png" alt="QR code for https://deghost.com/m">
                             <span>Scan to download<br>deghost.com/m</span>
                         </div>
                         <div class="app-badges" style="flex-direction: column; align-items: flex-start; gap: 10px;">
@@ -665,195 +798,95 @@
                 </div>
                 <div class="phone-shots">
                     <div class="phone-shot side">
-                        <img src="image/edu-app/screen-3.png" alt="Attendance tracking in DeGhost Edu">
+                        <img src="image/edu-app/screen-3.png" alt="Attendance in DeGhost Edu">
                     </div>
                     <div class="phone-shot main">
-                        <img src="image/edu-app/screen-4.png" alt="Student fee contracts and installments">
+                        <img src="image/edu-app/screen-4.png" alt="Fee contracts in DeGhost Edu">
                     </div>
                     <div class="phone-shot side">
-                        <img src="image/edu-app/screen-1.png" alt="DeGhost Edu school home dashboard">
+                        <img src="image/edu-app/screen-1.png" alt="DeGhost Edu home">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-head reveal">
-                <span class="section-tag">School Modules</span>
-                <h2>Everything a modern school needs — in one ERP</h2>
-                <p>Finance, academics, operations, and parents share one source of truth. No more scattered spreadsheets or disconnected tools.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card reveal">
-                    <div class="feature-icon"><i class="fas fa-coins"></i></div>
-                    <h3>Finance &amp; Accounting</h3>
-                    <p>School-wide accounting, budgeting, and financial reporting so leadership always knows the real numbers.</p>
-                </div>
-                <div class="feature-card reveal" data-delay="1">
-                    <div class="feature-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-                    <h3>Student Fees &amp; Contracts</h3>
-                    <p>Tuition contracts, discounts, installments, and online payments — tracked from office desk to parent phone.</p>
-                </div>
-                <div class="feature-card reveal" data-delay="2">
-                    <div class="feature-icon"><i class="fas fa-shopping-basket"></i></div>
-                    <h3>Purchasing &amp; Inventory</h3>
-                    <p>Purchase requests, approvals, and stock for books, supplies, and campus assets — controlled and auditable.</p>
-                </div>
-                <div class="feature-card reveal">
-                    <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Academics &amp; Assessments</h3>
-                    <p>Courses, sections, evaluations, and report cards that flow straight into the parent app when published.</p>
-                </div>
-                <div class="feature-card reveal" data-delay="1">
-                    <div class="feature-icon"><i class="fas fa-clipboard-check"></i></div>
-                    <h3>Attendance &amp; Daily Ops</h3>
-                    <p>Present, absent, late — recorded once and visible to parents instantly. Plus library, clinic, bus, and timetable.</p>
-                </div>
-                <div class="feature-card reveal" data-delay="2">
-                    <div class="feature-icon"><i class="fas fa-users-cog"></i></div>
-                    <h3>HR, Payroll &amp; Staff</h3>
-                    <p>Employee records, payroll, and school workforce management integrated with the same ERP your academics run on.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product showcase -->
-    <section id="product">
-        <div class="container">
-            <div class="section-head reveal">
-                <span class="section-tag">How it works</span>
-                <h2>Built for principals, finance, teachers &amp; parents</h2>
-                <p>One data model. Role-based views. Zero double entry between office and home.</p>
-            </div>
-
-            <div class="showcase-row">
-                <div class="showcase-media reveal">
-                    <img src="image/l2/content-img1.png" alt="School finance and analytics dashboard">
-                </div>
-                <div class="showcase-copy reveal" data-delay="1">
-                    <span class="section-tag">Finance office</span>
-                    <h3>Collect every riyal — with full transparency</h3>
-                    <p>See fee contracts, paid vs remaining, discounts, and installment plans in one place. Parents open the same picture on DeGhost Edu.</p>
-                    <ul class="check-list">
-                        <li><i class="fas fa-check"></i> Tuition, books &amp; fee schedules</li>
-                        <li><i class="fas fa-check"></i> Installments with clear due dates</li>
-                        <li><i class="fas fa-check"></i> Live paid / remaining status for parents</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="showcase-row flip">
-                <div class="showcase-media reveal">
-                    <img src="image/edu-app/screen-2.png" alt="School library and academic services" style="max-height: 520px; width: auto; margin-inline: auto; border-radius: 24px;">
-                </div>
-                <div class="showcase-copy reveal" data-delay="1">
-                    <span class="section-tag">Academics &amp; campus</span>
-                    <h3>From classroom to library to clinic</h3>
-                    <p>Assessments, report cards, library loans, attendance, and day-to-day services share the student record — so teachers, admins, and parents stay aligned.</p>
-                    <ul class="check-list">
-                        <li><i class="fas fa-check"></i> Academic evaluations &amp; report cards</li>
-                        <li><i class="fas fa-check"></i> Library browse, loans &amp; reservations</li>
-                        <li><i class="fas fa-check"></i> Attendance, messages &amp; school notices</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why DeGhost -->
+    <!-- Why -->
     <section id="why" class="why">
         <div class="container">
             <div class="section-head reveal">
                 <span class="section-tag">Why DeGhost</span>
-                <h2>The School ERP schools actually finish implementing</h2>
-                <p>We configure DeGhost around your academic year, fee structure, and parent communication — then stay with you after go-live.</p>
+                <h2>Why schools choose DeGhost</h2>
+                <p>One promise from DeGhost: less fragmentation between offices, classrooms, and homes.</p>
             </div>
             <div class="why-grid">
                 <div class="why-card reveal">
                     <div class="feature-icon"><i class="fas fa-school"></i></div>
-                    <h3>Built for schools</h3>
-                    <p>Not a generic ERP with education bolted on. Fees, assessments, library, and parent app are first-class modules.</p>
+                    <h3>School-first DeGhost ERP</h3>
+                    <p>With DeGhost, fees, assessments, library, and parent access are core — not add-ons to a generic business system.</p>
                 </div>
                 <div class="why-card reveal" data-delay="1">
-                    <div class="feature-icon"><i class="fas fa-link"></i></div>
-                    <h3>Office ↔ Parent linked</h3>
-                    <p>What finance and academics publish is what parents see on DeGhost Edu — same contracts, same attendance, same reports.</p>
+                    <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>Single source of truth</h3>
+                    <p>Enter data once in DeGhost. Finance, academics, and parents stay aligned automatically.</p>
                 </div>
                 <div class="why-card reveal" data-delay="2">
-                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
-                    <h3>Hands-on rollout</h3>
-                    <p>Data migration, staff training, and ongoing support from people who understand school operations — not ticket bots.</p>
+                    <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Guided go-live</h3>
+                    <p>The DeGhost team configures your fee structure and academic year with you — then supports your staff after launch.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-        <div class="container">
-            <div class="cta-inner reveal">
-                <h2>Ready to run your school on one platform?</h2>
-                <p>See how DeGhost School ERP unifies finance, fees, academics, and parent communication in a live walkthrough.</p>
-                <a href="#contact" class="btn btn-white">Book a School Demo <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" style="padding-top: 0;">
+    <section id="contact">
         <div class="container contact-grid">
             <div class="contact-info reveal">
-                <span class="section-tag">Contact</span>
-                <h2>Let's talk about your school</h2>
-                <p>Tell us about your campus size, fee model, and academic processes — we'll map DeGhost to your workflow.</p>
+                <span class="section-tag">Next step</span>
+                <h2>See DeGhost on your school’s workflow</h2>
+                <p>Tell us about your campus. The DeGhost team will demo fees, academics, and DeGhost Edu in a focused walkthrough.</p>
                 <div class="contact-item">
                     <div class="feature-icon"><i class="fas fa-envelope"></i></div>
-                    <div><b>Email us</b><a href="mailto:info@deghost.com">info@deghost.com</a></div>
+                    <div><b>Email</b><a href="mailto:info@deghost.com">info@deghost.com</a></div>
                 </div>
                 <div class="contact-item">
-                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
-                    <div><b>Response time</b><span>Within one business day</span></div>
-                </div>
-                <div class="contact-item">
-                    <div class="feature-icon"><i class="fas fa-globe"></i></div>
-                    <div><b>Serving schools</b><span>Qatar &amp; region · web + mobile</span></div>
+                    <div class="feature-icon"><i class="fas fa-reply"></i></div>
+                    <div><b>Reply time</b><span>Within one business day</span></div>
                 </div>
             </div>
             <form class="contact-form reveal" data-delay="1" id="contactForm">
                 <div class="form-row">
                     <div class="field">
                         <label for="name">Full name</label>
-                        <input type="text" id="name" name="name" placeholder="Ahmed Al-Sayed" required>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
                     </div>
                     <div class="field">
                         <label for="email">Work email</label>
-                        <input type="email" id="email" name="email" placeholder="principal@school.edu" required>
+                        <input type="email" id="email" name="email" placeholder="you@school.edu" required>
                     </div>
                 </div>
                 <div class="field">
                     <label for="company">School name</label>
-                    <input type="text" id="company" name="company" placeholder="Your School">
+                    <input type="text" id="company" name="company" placeholder="Your school">
                 </div>
                 <div class="field">
-                    <label for="message">What should we cover in the demo?</label>
-                    <textarea id="message" name="message" placeholder="e.g. student fees, report cards, parent app, purchasing..." required></textarea>
+                    <label for="message">Priority topics</label>
+                    <textarea id="message" name="message" placeholder="Fees, assessments, parent app, purchasing…" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Request Demo <i class="fas fa-paper-plane"></i></button>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Request a demo <i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="image/logo/logo-white.png" alt="DeGhost logo">
-                    <p>School ERP for finance, fees, academics, operations, and the DeGhost Edu parent app — one platform for the entire campus.</p>
+                    <img src="image/logo/logo-white.png" alt="DeGhost Education logo" width="160" height="48">
+                    <p>DeGhost School ERP + DeGhost Edu — one platform for campus operations and parent communication. Official website: deghost.com</p>
                     <div class="socials">
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -862,28 +895,27 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Product</h4>
+                    <h4>Explore</h4>
                     <ul>
-                        <li><a href="#features">School modules</a></li>
-                        <li><a href="#product">How it works</a></li>
+                        <li><a href="#features">Modules</a></li>
                         <li><a href="#mobile">Parent app</a></li>
                         <li><a href="#why">Why DeGhost</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Company</h4>
+                    <h4>Legal</h4>
                     <ul>
-                        <li><a href="#contact">Contact</a></li>
                         <li><a href="Privacy%20Policy%20-%20Deghost%20edu.html">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Get DeGhost Edu</h4>
+                    <h4>DeGhost Edu</h4>
                     <ul>
                         <li><a href="https://play.google.com/store/apps/details?id=com.deghost.degedu&hl=en" target="_blank" rel="noopener"><i class="fab fa-google-play"></i>&nbsp; Google Play</a></li>
                         <li><a href="https://apps.apple.com/us/app/deghost-edu/id6783858855" target="_blank" rel="noopener"><i class="fab fa-apple"></i>&nbsp; App Store</a></li>
-                        <li><a href="https://deghost.com/m"><i class="fas fa-qrcode"></i>&nbsp; Smart link /m</a></li>
+                        <li><a href="https://deghost.com/m"><i class="fas fa-qrcode"></i>&nbsp; deghost.com/m</a></li>
                     </ul>
                 </div>
             </div>
