@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download the DeGhost Edu app for Android and iOS.">
+    <meta name="robots" content="noindex">
+    <title>Get the DeGhost Edu App</title>
+    <link rel="shortcut icon" href="../image/degost-fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="../fonts/fontawesome-5/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1787FC;
+            --primary-dark: #0b6bd3;
+            --primary-soft: #eaf3fe;
+            --ink: #0f172a;
+            --muted: #5b6b7f;
+            --line: #e6ecf3;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--ink);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 20px;
+            background:
+                radial-gradient(600px 420px at 85% 5%, rgba(23, 135, 252, .12), transparent 60%),
+                radial-gradient(520px 400px at 5% 95%, rgba(23, 135, 252, .09), transparent 60%),
+                linear-gradient(180deg, #fbfdff 0%, #ffffff 100%);
+        }
+
+        .card {
+            width: min(480px, 100%);
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            box-shadow: 0 24px 60px -20px rgba(15, 23, 42, .15);
+            padding: 52px 40px 44px;
+            text-align: center;
+            animation: pop .5s cubic-bezier(.22, .61, .36, 1);
+        }
+
+        @keyframes pop {
+            from { opacity: 0; transform: translateY(20px) scale(.98); }
+            to { opacity: 1; transform: none; }
+        }
+
+        .logo { height: 76px; width: auto; margin: 0 auto 26px; }
+
+        h1 { font-family: 'Sora', sans-serif; font-size: 1.65rem; letter-spacing: -0.02em; margin-bottom: 10px; }
+
+        .sub { color: var(--muted); font-size: .98rem; margin-bottom: 28px; }
+
+        .qr-wrap {
+            display: none;
+            margin: 0 auto 28px;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            width: fit-content;
+        }
+        .qr-wrap.on { display: block; }
+        .qr-wrap img { width: 180px; height: 180px; }
+        .qr-wrap span {
+            display: block;
+            margin-top: 10px;
+            font-size: .78rem;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .store-btns { display: grid; gap: 12px; justify-items: center; }
+        .store-btns a { line-height: 0; transition: transform .3s; }
+        .store-btns a:hover { transform: translateY(-3px); }
+        .store-btns img.play { height: 56px; }
+        .store-btns img.apple { height: 40px; }
+
+        .note {
+            margin-top: 30px;
+            padding-top: 24px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: .85rem;
+        }
+        .note a { color: var(--primary); font-weight: 600; text-decoration: none; }
+        .note a:hover { color: var(--primary-dark); }
+
+        .redirecting {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: var(--muted);
+            font-size: .92rem;
+            margin-bottom: 24px;
+        }
+        .redirecting.on { display: flex; }
+        .spinner {
+            width: 16px; height: 16px;
+            border: 2px solid var(--primary-soft);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin .8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img class="logo" src="../image/deghost-logo-full.svg" alt="DeGhost logo">
+        <h1>Get the DeGhost Edu App</h1>
+        <p class="sub">Your school's companion app for parents — fees, attendance, library, and more.</p>
+
+        <div class="redirecting" id="redirecting">
+            <span class="spinner"></span> Taking you to the store…
+        </div>
+
+        <div class="qr-wrap" id="qrWrap">
+            <img src="../image/qr-deghost-m.png" alt="QR code for https://deghost.com/m">
+            <span>Scan with your phone · deghost.com/m</span>
+        </div>
+
+        <div class="store-btns">
+            <a href="https://play.google.com/store/apps/details?id=com.deghost.degedu&hl=en">
+                <img class="play" alt="Get it on Google Play" src="../image/google-play-badge.png">
+            </a>
+            <a href="https://apps.apple.com/us/app/deghost-edu/id6783858855">
+                <img class="apple" alt="Download on the App Store" src="../image/app-store-badge.svg">
+            </a>
+        </div>
+
+        <p class="note">Looking for the ERP instead? <a href="../">Visit DeGhost ERP</a></p>
+    </div>
+
+    <script>
+        (function () {
+            var PLAY = 'https://play.google.com/store/apps/details?id=com.deghost.degedu&hl=en';
+            var APPLE = 'https://apps.apple.com/us/app/deghost-edu/id6783858855';
+            var ua = navigator.userAgent || '';
+
+            var target = null;
+            if (/android/i.test(ua)) {
+                target = PLAY;
+            } else if (/iPad|iPhone|iPod/.test(ua) ||
+                       (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
+                target = APPLE;
+            }
+
+            if (target) {
+                document.getElementById('redirecting').classList.add('on');
+                window.location.replace(target);
+                setTimeout(function () {
+                    document.getElementById('redirecting').classList.remove('on');
+                }, 4000);
+            } else {
+                document.getElementById('qrWrap').classList.add('on');
+            }
+        })();
+    </script>
+</body>
+
+</html>
